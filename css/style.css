@@ -1,7 +1,26 @@
+#titulo{
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    justify-content:left;
+}
+
+
+
 #titulo h1{
-    font-size: 18px;
+    font-size: 20px;
+    padding-top: 5%;
 }
 
 #titulo h2{
-    font-size: 14px;
+    font-size: 18px;
+}
+
+#head{
+    display: flex;
+    align-items: center;
+}
+
+#offcanvasWithBothOptions{
+    width: 270px;
 }
