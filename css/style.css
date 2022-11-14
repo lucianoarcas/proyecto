@@ -57,14 +57,3 @@ header{
     width: 99%;
     border: dashed 2px lightgray;
 }
-
-#productosDestacados{
-    display: flex;
-    grid-area: ;
-}
-
-body{
-    display: grid;
-    grid
-                
-}
