@@ -1,3 +1,8 @@
+*{
+    box-sizing: border-box;
+}
+
+
 #titulo{
     display: flex;
     flex-direction: column;
@@ -8,12 +13,14 @@
 
 
 #titulo h1{
-    font-size: 20px;
+    font-size: 22px;
     padding-top: 5%;
+    color: goldenrod;
 }
 
 #titulo h2{
-    font-size: 18px;
+    font-size: 20px;
+    color: goldenrod;
 }
 
 #head{
@@ -23,4 +30,41 @@
 
 #offcanvasWithBothOptions{
     width: 285px;
+}
+
+
+#navbar-propio{
+    width: 100%;
+    padding: 0%;
+    margin: 0%;
+}
+header{
+    position: sticky;
+    top: 0%;
+    z-index: 1;
+    background-color: black;
+}
+
+#copa-vinos{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    
+
+}
+
+#copa-vinos img{
+    width: 99%;
+    border: dashed 2px lightgray;
+}
+
+#productosDestacados{
+    display: flex;
+    grid-area: ;
+}
+
+body{
+    display: grid;
+    grid
+                
 }
