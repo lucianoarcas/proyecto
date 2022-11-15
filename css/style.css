@@ -57,3 +57,58 @@ header{
     width: 99%;
     border: dashed 2px lightgray;
 }
+
+/* menu desplegable */
+#offcanvasWithBothOptions{
+    background-color: black;
+}
+
+
+.btn-close{
+    background-color: white;
+}
+
+
+#inicio-menu{
+    text-decoration: none;
+    color: goldenrod;
+    margin-left: 15%;
+    font-size: 24px;
+    text-decoration:;
+}
+
+.accordion-item {
+    background-color: rgb(58, 58, 58);
+}
+
+.accordion-button{
+    background-color: rgb(12, 12, 12);
+    color: goldenrod;
+}
+
+
+.accordion-button:focus{
+    background-color: rgb(12, 12, 12);
+    color: goldenrod;
+
+}
+
+.accordion{
+    border: 4px outset goldenrod;
+    
+    
+}
+
+
+ul{
+    padding: 0px;
+}
+
+li{
+    list-style: none;
+    margin: 3% 0%;
+    border: 2px solid goldenrod;
+    color: rgb(196, 196, 196);
+    background-color: black;
+    padding-left: 5%;
+}
