@@ -2,6 +2,10 @@
     box-sizing: border-box;
 }
 
+body{
+    background-color: black;
+}
+
 
 #titulo{
     display: flex;
@@ -20,6 +24,10 @@
 
 #titulo h2{
     font-size: 20px;
+    color: goldenrod;
+}
+
+main h6{
     color: goldenrod;
 }
 
@@ -54,7 +62,7 @@ header{
 }
 
 #copa-vinos img{
-    width: 99%;
+    width: 100%;
     border: dashed 2px lightgray;
 }
 
@@ -114,4 +122,30 @@ li{
 
 #prodDestacados{
     display:flex;
+    justify-content: stretch;
+}
+
+#textoDestacados{
+    color: goldenrod;
+}
+
+/* footer */
+
+#mail-dir{
+    font-size: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    color: goldenrod;
+}
+
+#logo-wpp{
+    width: 60%;
+    padding-left: 20%;
+    
+}
+
+#consulta{
+    color: goldenrod;
 }
