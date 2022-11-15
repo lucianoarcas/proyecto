@@ -136,6 +136,9 @@ footer{
     position: relative;
     bottom: 0%;
     margin-top: 10%;
+    display: flex;
+
+
 }
 
 #mail-dir{
@@ -145,15 +148,19 @@ footer{
     align-items: flex-start;
     justify-content: center;
     color: goldenrod;
-    padding-left: 4%;
+    padding-left: 6%;
 }
 
-#logo-wpp{
-    width: 60%;
-    padding-left: 20%;
-    
-}
+
 
 #consulta{
     color: goldenrod;
+    justify-content:flex-end;
+}
+
+#logo{
+    width: 30%;
+}
+#logo img{
+    width: 100%;
 }
