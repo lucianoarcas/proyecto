@@ -133,7 +133,7 @@ li{
 /* footer */
 
 footer{
-    position: absolute;
+    position: static;
     bottom: 0%;
     margin-top: 10%;
     display: flex;
