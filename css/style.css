@@ -139,7 +139,7 @@ ul label{
 
 #prodDestacados{
     display: grid;
-    grid-template-columns: 33.3% 33.3% 33.4%;
+    grid-template-columns: 50% 50%;
     grid-row: auto;
     gap: 2%;
     
