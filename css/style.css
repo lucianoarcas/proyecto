@@ -49,12 +49,18 @@ main{
     margin: 0%;
 }
 header{
-    position: sticky;
     top: 0%;
     z-index: 1;
     background-color: black;
     width: 100vw;
 }
+
+#nav-fijo{
+    padding: 24px 0px 5px 12px;
+    background-color: black;
+    z-index: 100;
+}
+
 
 #copa-vinos{
     display: flex;
