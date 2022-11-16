@@ -4,6 +4,7 @@
 
 body{
     background-color: black;
+    width: auto;
 }
 
 
@@ -52,6 +53,7 @@ header{
     top: 0%;
     z-index: 1;
     background-color: black;
+    width: 100vw;
 }
 
 #copa-vinos{
@@ -108,6 +110,7 @@ header{
 
 ul{
     padding: 0px;
+    
 }
 
 li{
@@ -117,13 +120,29 @@ li{
     color: rgb(196, 196, 196);
     background-color: black;
     padding-left: 5%;
+    width: 100%;
+
 }
+
+
+li a{
+    text-decoration: none;
+    color: white;
+}
+
+ul label{
+    width: 100%;
+}
+
 
 /* productos destacados del home */
 
 #prodDestacados{
-    display:flex;
-    justify-content: stretch;
+    display: grid;
+    grid-template-columns: 33.3% 33.3% 33.4%;
+    grid-row: auto;
+    gap: 2%;
+    
 }
 
 #textoDestacados{
