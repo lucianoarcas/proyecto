@@ -94,7 +94,7 @@ header{
 
 .accordion-button{
     background-color: rgb(12, 12, 12);
-    color: goldenrod;
+    color: white;
 }
 
 
@@ -184,4 +184,32 @@ footer{
 }
 #logo img{
     width: 100%;
+}
+
+/* footer menu desplegable */
+
+#footer-menu-desplegable{
+    position: absolute;
+    margin: 0px 0px;;
+    bottom: 5%;
+    width: 70%;
+
+}
+
+#footer-menu-desplegable li{
+    padding: 0%;
+}
+
+#footer-menu-desplegable a{
+    text-decoration: none;
+    color: white;
+    margin: 0%;
+    padding: 0%;
+}
+
+#footer-menu-desplegable label{
+    padding: 4%;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(12, 12, 12);
 }
