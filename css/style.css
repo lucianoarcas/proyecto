@@ -176,7 +176,7 @@ footer{
     align-items: flex-start;
     justify-content: center;
     color: goldenrod;
-    padding-left: 6%;
+    padding-left: 5%;
 }
 
 
@@ -231,29 +231,30 @@ footer{
 
 /* form de contacto */
 
-#nombre{
-    display: flex;
-    align-items: baseline;
-    justify-content: flex-end;
-    padding-right: 10%;
-    gap: 25px;
+
+
+#formulario1{
+    display: grid;
+    grid-template-columns: 49% 49%;
+    grid-template-rows: 33% 33% 33%;
+    grid-auto-rows: minmax(100px; auto);
+    column-gap: 3%;
 }
 
-#telefono{
+#formulario1 p{
     display: flex;
-    align-items: baseline;
-    justify-content: flex-end;
-    padding-right: 10%;
-    gap: 25px;
+    justify-self: flex-end;
+    align-self: baseline;
+    padding-top: 2%;
+    font-size: 16px;
+
 }
 
-#mail{
-    display: flex;
-    align-items: baseline;
-    justify-content: flex-end;
-    padding-right: 10%;
-    gap: 25px;
+#formulario1 input{
+    width: 90%;
+    height: 33px;
 }
+
 
 #comentario{
     margin-top: 25px;
@@ -277,6 +278,7 @@ footer{
     align-items: center;
     justify-content: flex-end;
     gap: 2px;
+    font-size: 22px;
 }
 
 #checkbox{
