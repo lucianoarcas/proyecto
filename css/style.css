@@ -1,5 +1,7 @@
 *{
     box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
 }
 
 body{
@@ -59,14 +61,14 @@ header{
     display: flex;
     justify-content: center;
     width: 100%;
-    
-
 }
 
 #copa-vinos img{
     width: 100%;
     border: dashed 2px lightgray;
 }
+
+
 
 /* menu desplegable */
 #offcanvasWithBothOptions{
@@ -104,12 +106,12 @@ header{
 }
 
 .accordion{
-    border: 4px outset goldenrod;   
+    border: 4px outset goldenrod;
 }
 
 ul{
     padding: 0px;
-    
+
 }
 
 li{
@@ -139,7 +141,7 @@ ul label{
 .nav-desktop{
     width: 100vw;
     padding: 0%;
-    
+
 }
 
 
@@ -201,7 +203,7 @@ ul label{
     grid-row: auto;
     grid-template-rows: 49% 49%;
     gap: 2%;
-    
+
 }
 
 #textoDestacados{
@@ -347,6 +349,17 @@ footer{
 
 /* medias para responsive home y contacto */
 
+/* para cel */
+@media only screen and (max-width: 880px){
+
+    #carouselExampleControls{
+        display: none;
+    }
+
+}
+
+/* para pc */
+
 @media only screen and (min-width: 881px) {
     #navbar-propio {
         display: none !important;
@@ -357,7 +370,7 @@ footer{
         padding-top: 5%;
         color: goldenrod;
     }
-    
+
     #titulo h2{
         font-size: 30px;
         color: goldenrod;
@@ -374,7 +387,11 @@ footer{
     #copa-vinos{
         display: none;
     }
-    
 
-    
+    #carouselExampleSlidesOnly{
+        width: 100vw;
+        height: 50vh;
+    }
+
+
 }
