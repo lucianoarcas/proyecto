@@ -55,13 +55,6 @@ header{
     width: 100vw;
 }
 
-#nav-fijo{
-    padding: 24px 0px 5px 12px;
-    background-color: black;
-    z-index: 100;
-}
-
-
 #copa-vinos{
     display: flex;
     justify-content: center;
@@ -138,6 +131,65 @@ li a{
 
 ul label{
     width: 100%;
+}
+
+/* navbar para desktop */
+
+
+.nav-desktop{
+    width: 100vw;
+    padding: 0%;
+    
+}
+
+
+#navFlex li{
+    padding: 0%;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+}
+
+
+#navbarNavDropdown{
+    justify-content: center;
+}
+
+#navbarNavDropdown ul{
+    width: 100%;
+}
+
+#navbarNavDropdown li{
+    margin: 0%;
+    height: 8vh;
+}
+
+#navbarNavDropdown a{
+    text-decoration: none;
+    color: white;
+}
+
+.dropdown-menu li{
+    width: 25%;
+}
+
+.dropdown-menu{
+    width: 50%;
+    background-color: transparent;
+}
+
+.dropdown-item{
+    display: flex;
+    justify-content: center;
+    align-self: center;
+}
+
+#menu-cerveza{
+    margin-left: 25%;
+}
+
+#menu-destilados{
+    margin-left: 50%;
 }
 
 
@@ -237,7 +289,7 @@ footer{
     display: grid;
     grid-template-columns: 49% 49%;
     grid-template-rows: 33% 33% 33%;
-    grid-auto-rows: minmax(100px; auto);
+    grid-auto-rows: minmax(100px auto);
     column-gap: 3%;
 }
 
@@ -251,7 +303,8 @@ footer{
 }
 
 #formulario1 input{
-    width: 90%;
+    width: 85%;
+    max-width: 185px;
     height: 33px;
 }
 
@@ -261,14 +314,8 @@ footer{
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: center;
     gap: 2px;
-}
-
-#comentario input{
-    height: 23vh;
-    width: 65vw;
-
 }
 
 #botonSend{
@@ -278,9 +325,8 @@ footer{
     align-items: center;
     justify-content: flex-end;
     gap: 2px;
-    font-size: 22px;
+    font-size: 20px;
 }
-
 #checkbox{
     margin-top: 25px;
     display: flex;
@@ -295,4 +341,40 @@ footer{
     display: flex;
     justify-content: center;
     gap: 25px;
+}
+
+
+
+/* medias para responsive home y contacto */
+
+@media only screen and (min-width: 881px) {
+    #navbar-propio {
+        display: none !important;
+     }
+
+     #titulo h1{
+        font-size: 36px;
+        padding-top: 5%;
+        color: goldenrod;
+    }
+    
+    #titulo h2{
+        font-size: 30px;
+        color: goldenrod;
+    }
+
+    #logo{
+        width: 100%;
+    }
+
+    #carrito{
+        width: 40%;
+    }
+
+    #copa-vinos{
+        display: none;
+    }
+    
+
+    
 }

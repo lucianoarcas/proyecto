@@ -37,7 +37,7 @@
     </header>
 
 
-    <nav class="navbar d-flex sticky-top" id="nav-fijo">
+    <nav class="navbar d-flex sticky-top" id="nav-cel">
         <div id="navbar-propio" class="container-fluid d-flex row">
             <!-- boton de menu desplegable -->
             <button class="btn btn-light col-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">
@@ -105,13 +105,14 @@
                           </div>
                         </div>
                       </div>
+         <!-- Footer menu desplegable -->
                         <div id="footer-menu-desplegable">
                             <ul class="nav justify-content-center">
                                 <li class="nav-item"><label for="ubicacion-menu">
                                     <a class="nav-link active" aria-current="page" href="#" id="ubicacion-menu">Ubicación</a></label>
                                 </li>
                                 <li class="nav-item"><label for="contacto-menu">
-                                    <a class="nav-link" href="./pages/contacto.html" id="contacto-menu">Contacto</a></label>
+                                    <a class="nav-link" href="./contacto.html" id="contacto-menu">Contacto</a></label>
                                 </li>
                             </ul>
                         </div>
@@ -146,7 +147,7 @@
         </div>
         <div id="comentario">
             <p>Deja tu comentario o consulta</p>
-            <input type="text" name="comentario" placeholder="Esribe un comentario y/o consulta">
+            <textarea name="comentario" id="textarea" cols="35" rows="5"></textarea>
         </div>
 
         <div id="checkbox">
