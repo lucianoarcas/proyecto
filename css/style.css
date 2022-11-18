@@ -15,6 +15,7 @@ body{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding: 0%;
 }
 
 
@@ -35,9 +36,13 @@ main{
 }
 
 
-#head{
+#head2{
     display: flex;
     align-items: center;
+}
+
+#div-logo{
+    padding: 0%;
 }
 
 #offcanvasWithBothOptions{
@@ -61,11 +66,11 @@ header{
     display: flex;
     justify-content: center;
     width: 100%;
+    display: none;
 }
 
 #copa-vinos img{
     width: 100%;
-    border: dashed 2px lightgray;
 }
 
 
@@ -241,11 +246,26 @@ footer{
 }
 
 #logo{
-    width: 30%;
+    width: 100%;
 }
 #logo img{
     width: 100%;
 }
+
+#consulta{
+    display: flex;
+    align-items: center;
+    justify-self: flex-end;
+}
+
+#consulta p{
+    font-size: 24px;
+}
+
+#logo-wpp img{
+    width: 50%;
+}
+
 
 /* footer menu desplegable */
 
@@ -349,14 +369,6 @@ footer{
 
 /* medias para responsive home y contacto */
 
-/* para cel */
-@media only screen and (max-width: 880px){
-
-    #carouselExampleControls{
-        display: none;
-    }
-
-}
 
 /* para pc */
 
@@ -380,18 +392,118 @@ footer{
         width: 100%;
     }
 
-    #carrito{
+    #carrito2{
         width: 40%;
     }
 
     #copa-vinos{
-        display: none;
+        display: flex;
+        
     }
 
     #carouselExampleSlidesOnly{
         width: 100vw;
         height: 50vh;
+        display: none;
+    }
+    #prodDestacados{
+        display: flex;
+        justify-self:flex-end;
+        margin-top: 5%;
+        display: grid;
+        grid-template-columns: 23% 23% 23% 23%;
+        grid-row: auto;
+        grid-template-rows:auto;
+        gap: 2%;
+
     }
 
+    #textoDestacados{
+        margin-top: 50%;
+    }
+
+    #nav-flex{
+        border-style: none;
+    }
+
+
+    #navbarNavDropdown ul li{
+       display: flex;
+    }
+
+    li a{
+        display: flex;
+        align-self: center;
+    }
+
+    #navFlex li:hover{
+        background-color: rgb(75, 75, 75);
+
+    }
+
+
+    .dropdown-menu li a:hover{
+        background-color: rgb(75, 75, 75);
+       
+    }
+
+    #head{
+        width: 100vw;
+        margin: 0%;
+        padding: 0%;
+    }
+
+    #head2{
+        display: flex;
+        align-items: flex-end;
+    }
+
+    #titulo{
+        display: flex;
+        flex-direction: row;
+        align-items: baseline;
+        gap: 5%;
+    }
+
+    #titulo h1{
+        font-size: 64px;
+    }
+
+    #titulo h2{
+        font-size: 54px;
+    }
+
+    #logo{
+        position: relative;
+
+    }
+
+    #carrito{
+        padding: 0%;
+    }
+
+    #carrito a{
+        display:flex;
+        justify-content: center;
+    }
+
+    #mail-dir p{
+
+        font-size: 24px;
+    }
+
+    #consulta{
+        display: flex;
+        align-items: center;
+        justify-self: flex-end;
+    }
+
+    #consulta p{
+        font-size: 24px;
+    }
+
+    #logo-wpp img{
+        width: 50%;
+    }
 
 }
