@@ -146,7 +146,8 @@ ul label{
 .nav-desktop{
     width: 100vw;
     padding: 0%;
-
+    display: none;
+    
 }
 
 
@@ -177,7 +178,7 @@ ul label{
 }
 
 .dropdown-menu li{
-    width: 25%;
+    width: 20%;
 }
 
 .dropdown-menu{
@@ -192,11 +193,11 @@ ul label{
 }
 
 #menu-cerveza{
-    margin-left: 25%;
+    margin-left: 20%;
 }
 
 #menu-destilados{
-    margin-left: 50%;
+    margin-left: 40%;
 }
 
 
@@ -318,13 +319,14 @@ footer{
 #formulario1 p{
     display: flex;
     justify-self: flex-end;
-    align-self: baseline;
+    align-self: center;
     padding-top: 2%;
     font-size: 16px;
 
 }
 
 #formulario1 input{
+    margin-top: 1%;
     width: 85%;
     max-width: 185px;
     height: 33px;
@@ -366,6 +368,46 @@ footer{
 }
 
 
+/* ubicacion - desktop */
+
+#mapas{
+    display: grid;
+    grid-template-columns: 48% 48%;
+    gap: 4%;
+    grid-template-rows: 1fr 2fr;
+}
+
+#mapas h2{
+    grid-column: 1 / 3;
+    display: flex;
+    align-self: center;
+    justify-self: center;
+    font-size: 58px;
+    color: goldenrod(214, 214, 214);
+}
+
+#mapas-suc{
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+}
+
+#mapas-suc2{
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+}
+
+#mapas div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 8%;
+}
+.texto-ubi{
+    color: whitesmoke;
+}
+
+
+
 
 /* medias para responsive home y contacto */
 
@@ -377,16 +419,11 @@ footer{
         display: none !important;
      }
 
-     #titulo h1{
-        font-size: 36px;
-        padding-top: 5%;
-        color: goldenrod;
-    }
+     .nav-desktop{
+        display: contents;
+     }
 
-    #titulo h2{
-        font-size: 30px;
-        color: goldenrod;
-    }
+
 
     #logo{
         width: 100%;
@@ -461,16 +498,19 @@ footer{
     #titulo{
         display: flex;
         flex-direction: row;
-        align-items: baseline;
-        gap: 5%;
+        align-items: center;
+        align-self: center;
+        text-size-adjust: auto;
+        gap: 4%;
     }
 
     #titulo h1{
-        font-size: 64px;
+        font-size: 48px;
+        padding-top: 0%;
     }
 
     #titulo h2{
-        font-size: 54px;
+        font-size: 48px;
     }
 
     #logo{
@@ -482,8 +522,14 @@ footer{
         padding: 0%;
     }
 
-    #carrito a{
+    #carrito{
         display:flex;
+        justify-content: center;
+        align-self: center;
+    }
+
+    #carrito a{
+        display: flex;
         justify-content: center;
     }
 
@@ -495,7 +541,10 @@ footer{
     #consulta{
         display: flex;
         align-items: center;
-        justify-self: flex-end;
+    }
+
+    #logo-wpp{
+        width: 60%;
     }
 
     #consulta p{
@@ -504,6 +553,7 @@ footer{
 
     #logo-wpp img{
         width: 50%;
+        padding-left: 15%;
     }
 
 }
