@@ -216,9 +216,9 @@ ul label{
     color: goldenrod;
 }
 
-/* footer */
+/* ---- primer footer ----- */
 
-footer{
+/* footer{
     position: static;
     bottom: 0%;
     margin-top: 15%;
@@ -266,7 +266,65 @@ footer{
 
 #logo-wpp img{
     width: 50%;
+} */
+
+/* segundo footer */
+
+
+.footer {
+    margin-top: 10%;
+    position: static;
+    bottom: 0%;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    border-top: 2px dashed goldenrod;
+
+    
 }
+
+.dir-mail{
+    display: flex;
+    flex-direction: column;
+    width: 50vw;
+    padding-left: 2%;
+    justify-content: center;
+
+}
+
+.redes{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 50vw;
+
+}
+
+.footer h4,h3{
+    color: goldenrod;
+    font-size: large;
+    margin-bottom: 0%;
+}
+
+.logos {
+    display: flex;
+    width: 60%;
+    justify-content: center;
+    
+}
+
+.logos a{
+    display: flex; 
+    justify-items: flex-end;
+    
+}
+
+.logos-footer{
+    width: 50%;
+}
+
+
 
 
 /* footer menu desplegable */
@@ -368,6 +426,8 @@ footer{
     gap: 25px;
 }
 
+/* termina pag contacto */
+
 
 /* ubicacion - desktop */
 
@@ -408,6 +468,154 @@ footer{
 }
 
 
+
+/* Paginas de precios */
+
+#main-precios{
+
+    display: flex;
+    margin-top: 5%;
+    height: max-content;
+    margin-bottom: 5%;
+    
+}
+
+/*---FILTROS Y TOTAL DEL PEDIDO--*/
+
+
+#cat-filtros{
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    margin-top: 25px;
+    list-style-type: none;
+    border: 5px white dashed;
+    height: auto;
+    width: 85%;
+    
+}
+
+#resumen h3{
+    position: flex;
+    color: goldenrod;
+    font-size: 24px;
+}
+
+.filtros{
+    list-style: none;
+    font-size: 20px;
+    width: 100%;
+}
+
+#resumen{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 20%;
+    
+}
+
+.filtros li{
+    margin: 3%;
+    border: 3px goldenrod solid;
+    color:white;
+}
+
+.total{
+    margin-top: 10%;
+    width: 100%;
+    
+}
+
+.total .precio-total{
+    display: flex;
+    align-items: baseline;
+    justify-content: space-evenly;
+    color: white;
+    font-size: 32px;
+    
+
+}
+
+#pagar{
+    width: 50%;
+    margin-left: 25%;
+    margin-top: 10%;
+    font-size: 24px;
+}
+
+
+
+/*---CAJA DE PRECIOS----*/
+
+.lista-precios{
+    margin-left:3%;
+    width: 75%;
+    height: max-content;
+}
+
+.top-caja{
+   padding-left: 13%;
+   color: goldenrod;
+   display: flex;
+   align-items: center;
+   justify-content: space-evenly;
+   
+}
+
+.top-caja h4{
+    font-size: 20px;
+}
+
+
+
+.left-caja{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    padding-left: 22%;
+    justify-content: space-around;
+
+}
+
+.art{
+    display: flex;
+    justify-content: space-between;
+    height: 15%;
+    margin-right: 0%;
+    border: 1px black dotted;
+}
+
+.descripcion{
+    width: 40%;
+    margin-left: 2%;
+}
+
+.art, .subtotal{
+    padding-right: 2%;
+}
+
+.art p{
+    position: relative;
+    top: 30%;
+
+}
+
+.cant{
+    width: 4%;
+    height: 50%;
+    position: relative;
+    top: 30%;
+}
+
+#caja{
+    border: solid 7px goldenrod;
+    height: 100%;
+    overflow: auto;
+    background-color: white;
+}
 
 
 /* medias para responsive home y contacto */
@@ -577,6 +785,12 @@ footer{
     #carrusel-box{
         
         display: none;
+    }
+
+    .footer h4,h3{
+        color: goldenrod;
+        font-size: small;
+        margin-bottom: 0%;
     }
 
 }
