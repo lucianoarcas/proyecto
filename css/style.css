@@ -7,7 +7,8 @@
 body{
     background-color: black;
     width: 100vw;
-
+    padding: 0%;
+    margin: 0%;
 }
 
 
@@ -199,14 +200,6 @@ ul label{
     margin-left: 40%;
 }
 
-#carrusel-box{
-    display: ;
-}
-
-#carouselExampleSlidesOnly{
-    display: ;
-}
-
 
 /* productos destacados del home */
 
@@ -232,9 +225,10 @@ footer{
     display: flex;
     z-index: 1;
     background-color: black;
-
-
+    width: 100vw;
 }
+
+
 
 #mail-dir{
     font-size: 12px;
@@ -577,6 +571,5 @@ footer{
     #carrusel-box{
         display: none;
     }
-
 
 }
