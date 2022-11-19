@@ -261,7 +261,7 @@ footer{
 }
 
 #consulta p{
-    font-size: 24px;
+    font-size: 18px;
 }
 
 #logo-wpp img{
@@ -557,7 +557,7 @@ footer{
     }
 
     #logo-wpp img{
-        width: 50%;
+        width: 60%;
         padding-left: 15%;
     }
 
@@ -567,8 +567,15 @@ footer{
 
 @media only screen and (max-width: 880px){
 
+    body{
+        width: 100vw;
+        height: 100vh;
+        padding: 0%;
+        margin: 0%;
+    }
 
     #carrusel-box{
+        
         display: none;
     }
 
