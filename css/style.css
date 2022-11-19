@@ -200,7 +200,11 @@ ul label{
 }
 
 #carrusel-box{
-    display: none;
+    display: ;
+}
+
+#carouselExampleSlidesOnly{
+    display: ;
 }
 
 
@@ -425,11 +429,6 @@ footer{
      .nav-desktop{
         display: contents;
      }
-/* 
-    #head2 div{
-        display: flex;
-        height: 10vh;
-    } */
 
 
     #logo{
@@ -567,5 +566,17 @@ footer{
         width: 50%;
         padding-left: 15%;
     }
+
+}
+
+/* para cel */
+
+@media only screen and (max-width: 880px){
+
+
+    #carrusel-box{
+        display: none;
+    }
+
 
 }
