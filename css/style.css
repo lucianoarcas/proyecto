@@ -7,6 +7,7 @@
 body{
     background-color: black;
     width: 100vw;
+
 }
 
 
@@ -45,9 +46,7 @@ main{
     padding: 0%;
 }
 
-#offcanvasWithBothOptions{
-    width: 285px;
-}
+
 
 
 #navbar-propio{
@@ -66,7 +65,6 @@ header{
     display: flex;
     justify-content: center;
     width: 100%;
-    display: none;
 }
 
 #copa-vinos img{
@@ -78,6 +76,7 @@ header{
 /* menu desplegable */
 #offcanvasWithBothOptions{
     background-color: black;
+    width: 285px;
 }
 
 
@@ -198,6 +197,10 @@ ul label{
 
 #menu-destilados{
     margin-left: 40%;
+}
+
+#carrusel-box{
+    display: none;
 }
 
 
@@ -422,7 +425,11 @@ footer{
      .nav-desktop{
         display: contents;
      }
-
+/* 
+    #head2 div{
+        display: flex;
+        height: 10vh;
+    } */
 
 
     #logo{
@@ -434,14 +441,19 @@ footer{
     }
 
     #copa-vinos{
-        display: flex;
+        display: none;
         
     }
 
+    #carrusel-box{
+        display: flex;
+        justify-content: center;
+    }
+
     #carouselExampleSlidesOnly{
-        width: 100vw;
-        height: 50vh;
-        display: none;
+        width: 70vw;
+        border: 2px dashed grey;
+        padding: 1%;
     }
     #prodDestacados{
         display: flex;
