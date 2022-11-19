@@ -272,6 +272,7 @@ ul label{
 
 
 .footer {
+    width: 100vw;
     margin-top: 10%;
     position: static;
     bottom: 0%;
