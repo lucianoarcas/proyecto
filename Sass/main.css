@@ -1,0 +1,782 @@
+* {
+  box-sizing: border-box;
+  margin: 0%;
+  padding: 0%;
+}
+
+body {
+  background-color: black;
+  width: 100vw;
+  padding: 0%;
+  margin: 0%;
+}
+
+#head {
+  width: 100vw;
+}
+
+#titulo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0%;
+  width: 60%;
+}
+
+#titulo h1 {
+  font-size: 22px;
+  padding-top: 5%;
+  color: goldenrod;
+}
+
+#titulo h2 {
+  font-size: 20px;
+  color: goldenrod;
+}
+
+main {
+  color: goldenrod;
+}
+
+#head2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  -moz-column-gap: 2%;
+       column-gap: 2%;
+}
+
+#div-logo {
+  padding: 0%;
+}
+
+#navbar-propio {
+  width: 100%;
+  padding: 0%;
+  margin: 0%;
+}
+
+header {
+  top: 0%;
+  z-index: 1;
+  background-color: black;
+  width: 100vw;
+}
+
+#copa-vinos {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+#copa-vinos img {
+  width: 100%;
+}
+
+/* menu desplegable */
+#offcanvasWithBothOptions {
+  background-color: black;
+  width: 285px;
+}
+
+.btn-close {
+  background-color: white;
+}
+
+#inicio-menu {
+  text-decoration: none;
+  color: goldenrod;
+  margin-left: 15%;
+  font-size: 24px;
+  text-decoration: underline;
+}
+
+.accordion-item {
+  background-color: rgb(58, 58, 58);
+}
+
+.accordion-button {
+  background-color: rgb(12, 12, 12);
+  color: white;
+}
+
+.accordion-button:focus {
+  background-color: rgb(12, 12, 12);
+  color: goldenrod;
+}
+
+.accordion {
+  border: 4px outset goldenrod;
+}
+
+ul {
+  padding: 0px;
+}
+
+li {
+  list-style: none;
+  margin: 3% 0%;
+  border: 2px solid goldenrod;
+  color: rgb(196, 196, 196);
+  background-color: black;
+  padding-left: 5%;
+  width: 100%;
+}
+
+li a {
+  text-decoration: none;
+  color: white;
+}
+
+ul label {
+  width: 100%;
+}
+
+/* navbar para desktop */
+.nav-desktop {
+  width: 100vw;
+  padding: 0%;
+  display: none;
+}
+
+#navFlex li {
+  padding: 0%;
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+}
+
+#navbarNavDropdown {
+  justify-content: center;
+}
+
+#navbarNavDropdown ul {
+  width: 100%;
+}
+
+#navbarNavDropdown li {
+  margin: 0%;
+  height: 8vh;
+}
+
+#navbarNavDropdown a {
+  text-decoration: none;
+  color: white;
+}
+
+.dropdown-menu li {
+  width: 20%;
+}
+
+.dropdown-menu {
+  width: 50%;
+  background-color: transparent;
+}
+
+.dropdown-item {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+}
+
+#menu-cerveza {
+  margin-left: 20%;
+}
+
+#menu-destilados {
+  margin-left: 40%;
+}
+
+/* productos destacados del home */
+#prodDestacados {
+  display: grid;
+  grid-template-columns: 49% 49%;
+  grid-row: auto;
+  grid-template-rows: 49% 49%;
+  gap: 2%;
+}
+
+#textoDestacados {
+  color: goldenrod;
+}
+
+.footer {
+  width: 100vw;
+  margin-top: 10%;
+  position: static;
+  bottom: 0%;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  border-top: 2px dashed goldenrod;
+}
+
+.dir-mail {
+  display: flex;
+  flex-direction: column;
+  width: 50vw;
+  padding-left: 2%;
+  justify-content: center;
+}
+
+.redes {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 50vw;
+}
+
+.footer h4, h3 {
+  color: goldenrod;
+  font-size: large;
+  margin-bottom: 0%;
+}
+
+.logos {
+  display: flex;
+  width: 50%;
+  justify-content: center;
+}
+
+.logos a {
+  display: flex;
+  justify-content: center;
+}
+
+.logos-footer {
+  width: 50%;
+}
+
+/* footer menu desplegable */
+#footer-menu-desplegable {
+  position: absolute;
+  margin: 0px 0px;
+  bottom: 5%;
+  width: 70%;
+}
+
+#footer-menu-desplegable li {
+  padding: 0%;
+}
+
+#footer-menu-desplegable a {
+  text-decoration: none;
+  color: white;
+  margin: 0%;
+  padding: 0%;
+}
+
+#footer-menu-desplegable label {
+  padding: 4%;
+  display: flex;
+  justify-content: center;
+  background-color: rgb(12, 12, 12);
+}
+
+/* pag de contacto */
+#brindar-datos {
+  color: whitesmoke;
+  text-align: center;
+  margin: 5% 8%;
+}
+
+/* form de contacto */
+#formulario1 {
+  display: grid;
+  grid-template-columns: 43% 55%;
+  grid-template-rows: 33% 33% 33%;
+  grid-auto-rows: minmax(100px auto);
+  -moz-column-gap: 2%;
+       column-gap: 2%;
+}
+
+#formulario1 p {
+  display: flex;
+  justify-self: flex-end;
+  align-self: center;
+  padding-top: 2%;
+  font-size: 16px;
+  padding-left: 2%;
+}
+
+#formulario1 input {
+  margin-top: 1%;
+  width: 85%;
+  max-width: 185px;
+  height: 33px;
+}
+
+#comentario {
+  margin-top: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2px;
+}
+
+#botonSend {
+  margin-top: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 2px;
+  font-size: 20px;
+}
+
+#checkbox {
+  margin-top: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 5px;
+}
+
+#opciones {
+  width: 300px;
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+}
+
+/* termina pag contacto */
+/* ubicacion - desktop */
+#mapas {
+  justify-content: center;
+  display: grid;
+  grid-template-columns: 40% 40%;
+  gap: 10%;
+  grid-template-rows: 1fr 2fr;
+}
+
+#mapas h2 {
+  grid-column: 1/3;
+  display: flex;
+  align-self: center;
+  justify-self: center;
+  font-size: 58px;
+  color: goldenrod(214, 214, 214);
+}
+
+#mapas-suc {
+  padding: 3%;
+  width: 40vw;
+  grid-column: 1/2;
+  grid-row: 2/3;
+}
+
+#mapas-suc2 {
+  padding: 3%;
+  width: 40vw;
+  grid-column: 2/3;
+  grid-row: 2/3;
+}
+
+#mapas div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 8%;
+  border: 8px outset goldenrod;
+  border-radius: 2%;
+}
+
+.texto-ubi {
+  color: whitesmoke;
+}
+
+/* Paginas de precios */
+#main-precios {
+  display: flex;
+  margin-top: 5%;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  margin-bottom: 5%;
+}
+
+/*---FILTROS Y TOTAL DEL PEDIDO--*/
+#cat-filtros {
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  margin-top: 25px;
+  list-style-type: none;
+  border: 5px white dashed;
+  height: auto;
+  width: 85%;
+}
+
+#resumen h3 {
+  position: flex;
+  color: goldenrod;
+  font-size: 24px;
+}
+
+.filtros {
+  list-style: none;
+  font-size: 20px;
+  width: 100%;
+}
+
+#resumen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 20%;
+}
+
+.filtros li {
+  margin: 3%;
+  border: 3px goldenrod solid;
+  color: white;
+}
+
+.total {
+  margin-top: 10%;
+  width: 100%;
+}
+
+.total .precio-total {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-evenly;
+  color: white;
+  font-size: 32px;
+}
+
+#pagar {
+  width: 50%;
+  margin-left: 25%;
+  margin-top: 10%;
+  font-size: 24px;
+}
+
+/*---CAJA DE PRECIOS----*/
+.lista-precios {
+  margin-left: 3%;
+  width: 75%;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+}
+
+.top-caja {
+  padding-left: 13%;
+  color: goldenrod;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.top-caja h4 {
+  font-size: 20px;
+}
+
+.left-caja {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  padding-left: 22%;
+  justify-content: space-around;
+}
+
+.art {
+  display: flex;
+  height: 65px;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-right: 0%;
+  border: 1px black dotted;
+}
+
+.descripcion {
+  width: 40%;
+  margin-left: 2%;
+}
+
+.art, .subtotal {
+  padding-right: 2%;
+}
+
+.art p {
+  position: relative;
+  margin-bottom: 0%;
+  display: flex;
+  align-self: center;
+  color: black;
+}
+
+.cant {
+  width: 4%;
+  height: 50%;
+  position: relative;
+  top: 30%;
+}
+
+#caja {
+  border: solid 7px goldenrod;
+  height: 400px;
+  overflow: auto;
+  background-color: white;
+}
+
+/* medias para responsive home y contacto */
+/* para pc */
+@media only screen and (min-width: 881px) {
+  #navbar-propio {
+    display: none !important;
+  }
+  .nav-desktop {
+    display: contents;
+  }
+  #logo {
+    width: 100%;
+  }
+  #carrito2 {
+    width: 40%;
+  }
+  #copa-vinos {
+    display: none;
+  }
+  #carrusel-box {
+    display: flex;
+    justify-content: center;
+  }
+  #carouselExampleSlidesOnly {
+    width: 70vw;
+    border: 2px dashed grey;
+    padding: 1%;
+  }
+  #prodDestacados {
+    display: flex;
+    justify-self: flex-end;
+    margin-top: 5%;
+    display: grid;
+    grid-template-columns: 23% 23% 23% 23%;
+    grid-row: auto;
+    grid-template-rows: auto;
+    gap: 2%;
+  }
+  #textoDestacados {
+    margin-top: 50%;
+  }
+  #nav-flex {
+    border-style: none;
+  }
+  #navbarNavDropdown ul li {
+    display: flex;
+  }
+  li a {
+    display: flex;
+    align-self: center;
+  }
+  #navFlex li:hover {
+    background-color: rgb(75, 75, 75);
+  }
+  .dropdown-menu li a:hover {
+    background-color: rgb(75, 75, 75);
+  }
+  #head {
+    width: 100vw;
+    margin: 0%;
+    padding: 0%;
+  }
+  #head2 {
+    display: flex;
+    align-items: flex-end;
+  }
+  #titulo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-self: center;
+    -webkit-text-size-adjust: auto;
+       -moz-text-size-adjust: auto;
+            text-size-adjust: auto;
+    gap: 4%;
+  }
+  #titulo h1 {
+    font-size: 48px;
+    padding-top: 0%;
+  }
+  #titulo h2 {
+    font-size: 48px;
+  }
+  #logo {
+    position: relative;
+  }
+  #carrito {
+    padding: 0%;
+  }
+  #carrito {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+  }
+  #carrito a {
+    display: flex;
+    justify-content: center;
+  }
+  #mail-dir p {
+    font-size: 24px;
+  }
+  #consulta {
+    display: flex;
+    align-items: center;
+  }
+  #logo-wpp {
+    width: 60%;
+  }
+  #consulta p {
+    font-size: 24px;
+  }
+  #logo-wpp img {
+    width: 60%;
+    padding-left: 15%;
+  }
+  #formulario1 {
+    grid-template-columns: 43% 55%;
+  }
+  #formulario1 p {
+    padding-right: 5%;
+  }
+}
+/* para cel */
+@media only screen and (max-width: 880px) {
+  body {
+    width: 100vw;
+    height: 100vh;
+    padding: 0%;
+    margin: 0%;
+  }
+  #carrusel-box {
+    display: none;
+  }
+  .footer h4, h3 {
+    color: goldenrod;
+    font-size: small;
+    margin-bottom: 0%;
+  }
+  .redes {
+    width: 40%;
+  }
+  .logos {
+    width: 100%;
+  }
+  .logos-footer {
+    width: 80%;
+  }
+  /* pag ubicacion */
+  #mapas {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 100vw;
+    width: 100vw;
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px 1fr 1fr;
+    grid-template-areas: "titulo" "alem" "mdl";
+  }
+  #mapas h2 {
+    justify-content: center;
+    grid-area: titulo;
+    width: 100vw;
+    font-size: 25px;
+  }
+  #alem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 50vh;
+    width: 85vw;
+    grid-area: alem;
+  }
+  #mapas-suc {
+    padding: 5%;
+    width: 85vw;
+    height: 50vh;
+  }
+  #mdl {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 50vh;
+    width: 85vw;
+    grid-area: mdl;
+  }
+  #mapas-suc2 {
+    padding: 5%;
+    width: 85vw;
+    height: 50vh;
+  }
+  .texto-ubi {
+    font-size: 13px;
+  }
+  /* pagina precios */
+  #main-precios {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "precios" "resumen";
+  }
+  #resumen {
+    grid-area: resumen;
+    width: 100vw;
+    margin: 0%;
+  }
+  .lista-precios {
+    grid-area: precios;
+    width: 92vw;
+  }
+  .top-caja {
+    padding-left: 5%;
+  }
+  .top-caja h4 {
+    font-size: 14px;
+  }
+  .left-caja {
+    padding-left: 15%;
+    justify-content: space-evenly;
+  }
+  .left-caja h3 {
+    font-size: 10px;
+  }
+  #caja {
+    height: 250px;
+  }
+  .art {
+    justify-content: space-between;
+    padding-right: 2%;
+    height: 45px;
+  }
+  .art p {
+    font-size: 11px;
+  }
+  .art input {
+    width: 30px;
+    font-size: 12px;
+  }
+  #pagar {
+    padding: 0%;
+    margin: 0%;
+    width: 30%;
+  }
+  .total {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .precio-total {
+    width: 80%;
+  }
+}/*# sourceMappingURL=main.css.map */
