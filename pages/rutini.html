@@ -20,6 +20,322 @@
 <body>
 
 
+    <header id="head">
+        <!-- logo titulo y carrito -->
+
+      <div id="head2" class="row">
+
+        <div id="div-logo" class="col-2">
+            <a href="../index.html"><img src="../media/logo-edit.png" alt="logo" class="img-fluid" id="logo"></a>
+        </div>
+
+        <div id="titulo" class="col-8">
+            <h1>Cu4tro Ancos</h1>
+            <h2>Liquor Store</h2>
+        </div>
+
+        <div class="col-2" id="carrito">
+            <a href="#"><img src="../media/carrito.png" alt="carrito" class="img-fluid" id="carrito2"></a>
+        </div>
+
+      </div>
+      
+
+    </header>
+
+
+    <nav class="navbar d-flex sticky-top" id="nav-cel">
+<!-- nav bar para cel -->
+            <div id="navbar-propio" class="container-fluid d-flex row">
+<!-- boton de menu desplegable -->
+                <button class="btn btn-light col-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+                    </svg>
+                </button>
+
+<!-- menu desplegable -->
+
+                <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel"><a href="../index.html" id="inicio-menu">Inicio</a></h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <div class="accordion accordion-flush" id="accordionFlushExample">
+                            <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingOne">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                VINOS
+                                </button>
+                            </h2>
+                            <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">
+                                    <ul>
+                                        <li><label for="argana"><a id="argana" href="./argana.html">Argana</a></label></li>
+                                        <li><label for="rutini"><a href="./rutini.html" id="rutini">Rutini</a></label></li>
+                                        <li><label for="salentein"><a href="./salentein.html" id="salentein">Salentein</a></label</li>
+                                        <li><label for="escorihuela"><a href="./escorihuela.html" id="escorihuela">Escorihuela</a></label></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            </div>
+                            <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                CERVEZAS
+                                </button>
+                            </h2>
+                            <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">
+                                    <ul>
+                                        <li><label for="industriales"><a id="industriales" href="./cerv-industriales.html">Industriales</a></label></li>
+                                        <li><label for="artesanales"><a href="./cerv-artesanal.html" id="artesanales">Artesanales</a></label></li>
+                                        <li><label for="importadas"><a href="./cerv-importadas.html" id="importadas">Importadas</a></label</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            </div>
+                            <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                                DESTILADOS
+                                </button>
+                            </h2>
+                            <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">
+                                    <ul>
+                                        <li><label for="gin"><a id="gin" href="./gin.html">Gin</a></label></li>
+                                        <li><label for="whisky"><a href="./whisky.html" id="whisky">Whisky</a></label></li>
+                                        <li><label for="vodka"><a href="./vodka.html" id="vodka">Vodka</a></label</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+            <!-- footer menu desokegable -->
+                            <div id="footer-menu-desplegable">
+                                <ul class="nav justify-content-center">
+                                    <li class="nav-item"><label for="ubicacion-menu">
+                                        <a class="nav-link active" aria-current="page" href="./ubicacion.html" id="ubicacion-menu">Ubicación</a></label>
+                                    </li>
+                                    <li class="nav-item"><label for="contacto-menu">
+                                        <a class="nav-link" href="./contacto.html" id="contacto-menu">Contacto</a></label>
+                                    </li>
+                                </ul>
+                            </div>
+                    </div>
+                </div>
+
+            <!-- Buscador -->
+
+                <form class="d-flex col-10" role="search" id="busqueda">
+                    <input class="form-control me-1" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-light" type="submit"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                    </svg></button>
+                </form>
+            </div>
+<!-- navbar para desktop -->
+            <div class="nav-desktop">
+                <nav class="navbar navbar-expand-md bg-light nav-desktop">
+                    <div class="container-fluid nav-desktop">
+                    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                        <ul class="navbar-nav" id="navFlex">
+                        <li class="nav-item">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                VINOS
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="./argana.html">Argana</a></li>
+                                <li><a class="dropdown-item" href="./salentein.html">Salentein</a></li>
+                                <li><a class="dropdown-item" href="./rutini.html">Rutini</a></li>
+                                <li><a class="dropdown-item" href="./escorihuela.html">Escorihuela</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                CERVEZAS
+                            </a>
+                            <ul class="dropdown-menu" id="menu-cerveza">
+                                <li><a class="dropdown-item" href="./cerv-industriales.html">Industriales</a></li>
+                                <li><a class="dropdown-item" href="./cerv-artesanal.html">Artesanales</a></li>
+                                <li><a class="dropdown-item" href="./cerv-importadas.html">Importadas</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                DESTILADOS
+                            </a>
+                            <ul class="dropdown-menu" id="menu-destilados">
+                                <li><a class="dropdown-item" href="./gin.html">Gin</a></li>
+                                <li><a class="dropdown-item" href="./whisky.html">Whisky</a></li>
+                                <li><a class="dropdown-item" href="./vodka.html">Vodka</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./ubicacion.html">UBICACIÓN</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./contacto.html">CONTACTO</a>
+                        </li>
+                            </ul>
+                        </li>
+                        </ul>
+                    </div>
+                    </div>
+                </nav>
+            </div>
+    </nav>
+
+
+    <main id="main-precios">
+
+        <section id="resumen">
+
+          <div class="d-flex gap-2">                    
+            <h3>CANT DE PRODUCTOS:</h3>
+            <h4>36</h4>
+          </div>
+
+          <div class="total">
+
+            <div class="precio-total">
+              <h3>Pedido Total</h3>
+              <p>$$$$$</p>  
+            </div>
+
+            <input id="pagar" type="button" value="Ir a Pagar">
+
+          </div>
+
+        </section>
+
+        <section class="lista-precios">
+
+            <div class="top-caja">
+
+              <h4>PRODUCTOS</h4>
+
+              <div class="left-caja">
+                <h3>FORMATO</h3>
+                <h3>PRECIO</h3>
+                <h3>CANT</h3>
+                <h3>SUBTOTAL</h3>
+              </div>
+                
+            </div>
+
+            <div id="caja">
+
+              <article class="art">
+                  <p class="descripcion">San Felipe Malbec</p>
+                  <p class="formato"> 750cc</p>
+                  <p class="precio">$840</p>
+                  <input type="number" class="cant">
+                  <p class="subtotal">subtotal</p>
+              </article>
+
+              <article class="art">
+                  <p class="descripcion">San Felipe Cabernet</p>
+                  <p class="formato"> 750cc</p>
+                  <p class="precio">$840</p>
+                  <input type="number" class="cant">
+                  <p class="subtotal">subtotal</p>
+              </article>
+
+              <article class="art">
+                  <p class="descripcion">San Felipe Roble Malbec</p>
+                  <p class="formato">750cc</p>
+                  <p class="precio">$1100</p>
+                  <input type="number" class="cant">
+                  <p class="subtotal">subtotal</p>
+              </article>
+
+              <article class="art">
+                  <p class="descripcion">Trumpeter Malbec</p>
+                  <p class="formato">750cc</p>
+                  <p class="precio">$1800</p>
+                  <input type="number" class="cant">
+                  <p class="subtotal">subtotal</p>
+              </article>
+
+              <article class="art">
+                  <p class="descripcion">Trumpeter Cabernet Sauvignon</p>
+                  <p class="formato">750cc</p>
+                  <p class="precio">$1800</p>
+                  <input type="number" class="cant">
+                  <p class="subtotal">subtotal</p>
+              </article>
+
+              <article class="art">
+                  <p class="descripcion">Trumpeter Reserva Malbec</p>
+                  <p class="formato">750cc</p>
+                  <p class="precio">$2230</p>
+                  <input type="number" class="cant">
+                  <p class="subtotal">subtotal</p>
+              </article>
+
+              <article class="art">
+                  <p class="descripcion">Rutini Malbec</p>
+                  <p class="formato">750cc</p>
+                  <p class="precio">$5000</p>
+                  <input type="number" class="cant">
+                  <p class="subtotal">subtotal</p>
+              </article>
+
+              <article class="art">
+                  <p class="descripcion">Rutini Cabernet-Malbec</p>
+                  <p class="formato">750cc</p>
+                  <p class="precio">$3150</p>
+                  <input type="number" class="cant">
+                  <p class="subtotal">subtotal</p>
+              </article>
+
+
+            </div>
+            
+
+        </section>
+
+            
+        
+    </main>
+
+
+
+    <footer class="footer">
+
+      <div class="dir-mail">
+        <h3>Dirección: Av. Alem 555, PB</h3>
+        <h3>E-mail: cu4troancos@gmail.com</h3>
+    
+      </div>
+    
+    
+      <div class="redes">
+
+        <h4>Redes:</h4>
+  
+        <div class="logos">
+        
+           <a href="https://www.facebook.com/cu4troancos/" target="_blank" rel="noopener noreferrer"><img src="../media/logo-facebook.png" alt="logo facebook" class="logos-footer"></a>
+           <a href="https://www.instagram.com/cu4troancos/?hl=es" target="_blank" rel="noopener noreferrer"><img src="../media/logo-instagram.jpg" alt="logo instagram" class="logos-footer"></a>
+           <a href="https://api.whatsapp.com/send?phone=543816098089&text=Me%20interesa%2C%20vi%20una%20promo%20en%20la%20p%C3%A1gina%20de%20Cuatro%20Ancos" target="_blank" rel="noopener noreferrer"><img src="../media/logo-wpp.png" alt="logo whatsapp" class="logos-footer"></a>
+  
+        </div>
+    
+      </div>
+      
+      
+      </footer>
+      
+      
+      
+      
+      
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+
 
     
     
