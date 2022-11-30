@@ -1,0 +1,45 @@
+#titulo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0%;
+    width: 60%;
+
+    h1{
+        font-size: 22px;
+        padding-top: 5%;
+        color: goldenrod;
+    }
+    h2{
+        font-size: 20px;
+        color: goldenrod;
+    }
+
+}
+
+
+
+#head{
+    width: 100vw;
+    top: 0%;
+    z-index: 1;
+    background-color: black;
+    width: 100vw;
+
+    #head2{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100vw;
+        column-gap: 2%;
+
+        #div-logo{
+            padding: 0%;
+        }
+        
+    }
+
+
+
+}

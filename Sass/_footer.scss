@@ -1,0 +1,53 @@
+.footer {
+    width: 100vw;
+    margin-top: 10%;
+    position: static;
+    bottom: 0%;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    border-top: 2px dashed goldenrod;
+
+    .dir-mail{
+        display: flex;
+        flex-direction: column;
+        width: 50vw;
+        padding-left: 2%;
+        justify-content: center;
+    
+    }
+
+    .redes{
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        width: 50vw;
+
+        .logos {
+            display: flex;
+            width: 50%;
+            justify-content: center;
+
+            a{
+                display: flex; 
+                justify-content: center;
+                
+            }
+
+            .logos-footer{
+                width: 50%;
+            }
+            
+        }
+    
+    }
+
+    h4,h3{
+        color: goldenrod;
+        font-size: large;
+        margin-bottom: 0%;
+    }
+    
+}
+

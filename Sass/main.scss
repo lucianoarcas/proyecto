@@ -11,65 +11,16 @@ body{
     margin: 0%;
 }
 
-#head{
-    width: 100vw;
-}
-
-
-#titulo{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 0%;
-    width: 60%;
-}
+@import "header";
+@import "nav";
+@import "footer";
 
 
 
-#titulo h1{
-    font-size: 22px;
-    padding-top: 5%;
+main {
     color: goldenrod;
 }
 
-#titulo h2{
-    font-size: 20px;
-    color: goldenrod;
-}
-
-main{
-    color: goldenrod;
-}
-
-
-#head2{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100vw;
-    column-gap: 2%;
-    
-}
-
-#div-logo{
-    padding: 0%;
-}
-
-
-
-
-#navbar-propio{
-    width: 100%;
-    padding: 0%;
-    margin: 0%;
-}
-header{
-    top: 0%;
-    z-index: 1;
-    background-color: black;
-    width: 100vw;
-}
 
 #copa-vinos{
     display: flex;
@@ -79,134 +30,6 @@ header{
 
 #copa-vinos img{
     width: 100%;
-}
-
-
-
-/* menu desplegable */
-#offcanvasWithBothOptions{
-    background-color: black;
-    width: 285px;
-}
-
-
-.btn-close{
-    background-color: white;
-}
-
-
-#inicio-menu{
-    text-decoration: none;
-    color: goldenrod;
-    margin-left: 15%;
-    font-size: 24px;
-    text-decoration: underline;
-}
-
-.accordion-item {
-    background-color: rgb(58, 58, 58);
-}
-
-.accordion-button{
-    background-color: rgb(12, 12, 12);
-    color: white;
-}
-
-
-.accordion-button:focus{
-    background-color: rgb(12, 12, 12);
-    color: goldenrod;
-
-}
-
-.accordion{
-    border: 4px outset goldenrod;
-}
-
-ul{
-    padding: 0px;
-
-}
-
-li{
-    list-style: none;
-    margin: 3% 0%;
-    border: 2px solid goldenrod;
-    color: rgb(196, 196, 196);
-    background-color: black;
-    padding-left: 5%;
-    width: 100%;
-
-}
-
-
-li a{
-    text-decoration: none;
-    color: white;
-}
-
-ul label{
-    width: 100%;
-}
-
-/* navbar para desktop */
-
-
-.nav-desktop{
-    width: 100vw;
-    padding: 0%;
-    display: none;
-    
-}
-
-
-#navFlex li{
-    padding: 0%;
-    display: flex;
-    justify-content: center;
-    align-items: baseline;
-}
-
-
-#navbarNavDropdown{
-    justify-content: center;
-}
-
-#navbarNavDropdown ul{
-    width: 100%;
-}
-
-#navbarNavDropdown li{
-    margin: 0%;
-    height: 8vh;
-}
-
-#navbarNavDropdown a{
-    text-decoration: none;
-    color: white;
-}
-
-.dropdown-menu li{
-    width: 20%;
-}
-
-.dropdown-menu{
-    width: 50%;
-    background-color: transparent;
-}
-
-.dropdown-item{
-    display: flex;
-    justify-content: center;
-    align-self: center;
-}
-
-#menu-cerveza{
-    margin-left: 20%;
-}
-
-#menu-destilados{
-    margin-left: 40%;
 }
 
 
@@ -225,95 +48,6 @@ ul label{
     color: goldenrod;
 }
 
-
-
-
-.footer {
-    width: 100vw;
-    margin-top: 10%;
-    position: static;
-    bottom: 0%;
-    display: flex;
-    justify-content: space-between;
-    padding-top: 2%;
-    padding-bottom: 2%;
-    border-top: 2px dashed goldenrod;
-
-    
-}
-
-.dir-mail{
-    display: flex;
-    flex-direction: column;
-    width: 50vw;
-    padding-left: 2%;
-    justify-content: center;
-
-}
-
-.redes{
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    width: 50vw;
-
-}
-
-.footer h4,h3{
-    color: goldenrod;
-    font-size: large;
-    margin-bottom: 0%;
-}
-
-.logos {
-    display: flex;
-    width: 50%;
-    justify-content: center;
-    
-}
-
-.logos a{
-    display: flex; 
-    justify-content: center;
-    
-   
-    
-}
-
-.logos-footer{
-    width: 50%;
-}
-
-
-
-
-/* footer menu desplegable */
-
-#footer-menu-desplegable{
-    position: absolute;
-    margin: 0px 0px;;
-    bottom: 5%;
-    width: 70%;
-
-}
-
-#footer-menu-desplegable li{
-    padding: 0%;
-}
-
-#footer-menu-desplegable a{
-    text-decoration: none;
-    color: white;
-    margin: 0%;
-    padding: 0%;
-}
-
-#footer-menu-desplegable label{
-    padding: 4%;
-    display: flex;
-    justify-content: center;
-    background-color: rgb(12, 12, 12);
-}
 
 /* pag de contacto */
 
