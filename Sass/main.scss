@@ -11,9 +11,11 @@ body{
     margin: 0%;
 }
 
+
 @import "header";
 @import "nav";
 @import "footer";
+@import "precios";
 
 
 
@@ -152,10 +154,9 @@ main {
 }
 
 #mapas-suc2{
-    padding: 3%;
-    width: 40vw;
-    grid-column: 2 / 3;
-    grid-row: 2 / 3;
+    @extend #mapas-suc
+    ;grid-column: 2 / 3;
+    
 }
 
 #mapas div{
@@ -170,161 +171,6 @@ main {
     color: whitesmoke;
 }
 
-
-
-/* Paginas de precios */
-
-#main-precios{
-
-    display: flex;
-    margin-top: 5%;
-    height: max-content;
-    margin-bottom: 5%;
-    
-}
-
-/*---FILTROS Y TOTAL DEL PEDIDO--*/
-
-
-#cat-filtros{
-    background-color: black;
-    display: flex;
-    flex-direction: column;
-    align-items: stretch;
-    margin-top: 25px;
-    list-style-type: none;
-    border: 5px white dashed;
-    height: auto;
-    width: 85%;
-    
-}
-
-#resumen h3{
-    position: flex;
-    color: goldenrod;
-    font-size: 24px;
-}
-
-.filtros{
-    list-style: none;
-    font-size: 20px;
-    width: 100%;
-}
-
-#resumen{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-    width: 20%;
-    
-}
-
-.filtros li{
-    margin: 3%;
-    border: 3px goldenrod solid;
-    color:white;
-}
-
-.total{
-    margin-top: 10%;
-    width: 100%;
-    
-}
-
-.total .precio-total{
-    display: flex;
-    align-items: baseline;
-    justify-content: space-evenly;
-    color: white;
-    font-size: 32px;
-    
-
-}
-
-#pagar{
-    width: 50%;
-    margin-left: 25%;
-    margin-top: 10%;
-    font-size: 24px;
-}
-
-
-
-/*---CAJA DE PRECIOS----*/
-
-.lista-precios{
-    margin-left:3%;
-    width: 75%;
-    height: max-content;
-}
-
-.top-caja{
-   padding-left: 13%;
-   color: goldenrod;
-   display: flex;
-   align-items: center;
-   justify-content: space-evenly;
-   
-}
-
-.top-caja h4{
-    font-size: 20px;
-}
-
-
-
-.left-caja{
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    padding-left: 22%;
-    justify-content: space-around;
-
-}
-
-.art{
-    display: flex;
-    height: 65px;
-    justify-content: space-between;
-    align-items: baseline;
-    margin-right: 0%;
-    border: 1px black dotted;
-}
-
-.descripcion{
-    width: 40%;
-    margin-left: 2%;
-}
-
-.art, .subtotal{
-    padding-right: 2%;
-}
-
-.art p{
-    position: relative;
-    margin-bottom: 0%;
-    display: flex;
-    align-self: center;
-    color: black;
-
-}
-
-.cant{
-    width: 4%;
-    height: 50%;
-    position: relative;
-    top: 30%;
-}
-
-
-
-#caja{
-    border: solid 7px goldenrod;
-    height: 400px;
-    overflow: auto;
-    background-color: white;
-}
 
 
 /* medias para responsive home y contacto */

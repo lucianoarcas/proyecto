@@ -213,6 +213,106 @@ li a {
   margin-bottom: 0%;
 }
 
+/* Paginas de precios */
+#main-precios {
+  display: flex;
+  margin-top: 5%;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  margin-bottom: 5%;
+  /*---CAJA DE PRECIOS----*/
+}
+#main-precios #resumen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 20%;
+}
+#main-precios #resumen h3 {
+  color: goldenrod;
+  font-size: 22px;
+}
+#main-precios #resumen .total {
+  margin-top: 10%;
+  width: 100%;
+}
+#main-precios #resumen .total .precio-total {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-evenly;
+  color: white;
+  font-size: 32px;
+}
+#main-precios #resumen .total #pagar {
+  width: 50%;
+  margin-left: 25%;
+  margin-top: 10%;
+  font-size: 24px;
+}
+#main-precios .lista-precios {
+  margin-left: 3%;
+  width: 75%;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+}
+#main-precios .lista-precios #caja {
+  border: solid 7px goldenrod;
+  height: 400px;
+  overflow: auto;
+  background-color: white;
+}
+#main-precios .lista-precios #caja .art {
+  display: flex;
+  height: 65px;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-right: 0%;
+  border: 1px black dotted;
+}
+#main-precios .lista-precios #caja .art .descripcion {
+  width: 40%;
+  margin-left: 2%;
+}
+#main-precios .lista-precios #caja .art .subtotal {
+  padding-right: 5%;
+}
+#main-precios .lista-precios #caja .art .cant {
+  width: 4%;
+  height: 50%;
+  position: relative;
+  top: 30%;
+}
+#main-precios .lista-precios #caja .art p {
+  position: relative;
+  margin-bottom: 0%;
+  display: flex;
+  align-self: center;
+  color: black;
+}
+#main-precios .lista-precios .top-caja {
+  padding-left: 13%;
+  color: goldenrod;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+#main-precios .lista-precios .top-caja h4 {
+  font-size: 24px;
+}
+#main-precios .lista-precios .top-caja .left-caja {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  padding-left: 22%;
+  justify-content: space-around;
+}
+#main-precios .lista-precios .top-caja .left-caja h3 {
+  font-size: 22px;
+}
+
 main {
   color: goldenrod;
 }
@@ -327,7 +427,7 @@ main {
   color: goldenrod(214, 214, 214);
 }
 
-#mapas-suc {
+#mapas-suc, #mapas-suc2 {
   padding: 3%;
   width: 40vw;
   grid-column: 1/2;
@@ -335,10 +435,7 @@ main {
 }
 
 #mapas-suc2 {
-  padding: 3%;
-  width: 40vw;
   grid-column: 2/3;
-  grid-row: 2/3;
 }
 
 #mapas div {
@@ -352,144 +449,6 @@ main {
 
 .texto-ubi {
   color: whitesmoke;
-}
-
-/* Paginas de precios */
-#main-precios {
-  display: flex;
-  margin-top: 5%;
-  height: -webkit-max-content;
-  height: -moz-max-content;
-  height: max-content;
-  margin-bottom: 5%;
-}
-
-/*---FILTROS Y TOTAL DEL PEDIDO--*/
-#cat-filtros {
-  background-color: black;
-  display: flex;
-  flex-direction: column;
-  align-items: stretch;
-  margin-top: 25px;
-  list-style-type: none;
-  border: 5px white dashed;
-  height: auto;
-  width: 85%;
-}
-
-#resumen h3 {
-  position: flex;
-  color: goldenrod;
-  font-size: 24px;
-}
-
-.filtros {
-  list-style: none;
-  font-size: 20px;
-  width: 100%;
-}
-
-#resumen {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-evenly;
-  width: 20%;
-}
-
-.filtros li {
-  margin: 3%;
-  border: 3px goldenrod solid;
-  color: white;
-}
-
-.total {
-  margin-top: 10%;
-  width: 100%;
-}
-
-.total .precio-total {
-  display: flex;
-  align-items: baseline;
-  justify-content: space-evenly;
-  color: white;
-  font-size: 32px;
-}
-
-#pagar {
-  width: 50%;
-  margin-left: 25%;
-  margin-top: 10%;
-  font-size: 24px;
-}
-
-/*---CAJA DE PRECIOS----*/
-.lista-precios {
-  margin-left: 3%;
-  width: 75%;
-  height: -webkit-max-content;
-  height: -moz-max-content;
-  height: max-content;
-}
-
-.top-caja {
-  padding-left: 13%;
-  color: goldenrod;
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-}
-
-.top-caja h4 {
-  font-size: 20px;
-}
-
-.left-caja {
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  padding-left: 22%;
-  justify-content: space-around;
-}
-
-.art {
-  display: flex;
-  height: 65px;
-  justify-content: space-between;
-  align-items: baseline;
-  margin-right: 0%;
-  border: 1px black dotted;
-}
-
-.descripcion {
-  width: 40%;
-  margin-left: 2%;
-}
-
-.art, .subtotal {
-  padding-right: 2%;
-}
-
-.art p {
-  position: relative;
-  margin-bottom: 0%;
-  display: flex;
-  align-self: center;
-  color: black;
-}
-
-.cant {
-  width: 4%;
-  height: 50%;
-  position: relative;
-  top: 30%;
-}
-
-#caja {
-  border: solid 7px goldenrod;
-  height: 400px;
-  overflow: auto;
-  background-color: white;
 }
 
 /* medias para responsive home y contacto */
@@ -664,7 +623,7 @@ main {
     width: 85vw;
     grid-area: alem;
   }
-  #mapas-suc {
+  #mapas-suc, #mapas-suc2 {
     padding: 5%;
     width: 85vw;
     height: 50vh;
