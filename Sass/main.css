@@ -323,7 +323,6 @@ main {
   justify-content: center;
   width: 100%;
 }
-
 #copa-vinos img {
   width: 100%;
 }
@@ -439,7 +438,7 @@ main {
   color: goldenrod(214, 214, 214);
 }
 
-/* medias para responsive home y contacto */
+/* medias para responsive */
 /* para pc */
 @media only screen and (min-width: 881px) {
   #head {
