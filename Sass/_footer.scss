@@ -19,24 +19,26 @@
     }
 
     .redes{
+        padding-right: 5%;
         display: flex;
         align-items: center;
-        justify-content: flex-end;
-        width: 50vw;
+        justify-content: space-evenly;
+        width: 40vw;
 
         .logos {
             display: flex;
             width: 50%;
-            justify-content: center;
+            justify-content: space-between;
+            
 
             a{
                 display: flex; 
-                justify-content: center;
+                justify-content: space-evenly;
                 
             }
 
             .logos-footer{
-                width: 50%;
+                width: 100%;
             }
             
         }

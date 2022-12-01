@@ -61,31 +61,29 @@ main {
 
 /* form de contacto */
 
-
-
 #formulario1{
     display: grid;
     grid-template-columns: 43% 55%;
     grid-template-rows: 33% 33% 33%;
     grid-auto-rows: minmax(100px auto);
     column-gap: 2%;
-}
 
-#formulario1 p{
-    display: flex;
-    justify-self: flex-end;
-    align-self: center;
-    padding-top: 2%;
-    font-size: 16px;
-    padding-left: 2%;
+    p{
+        display: flex;
+        justify-self: flex-end;
+        align-self: center;
+        padding-top: 2%;
+        font-size: 16px;
+        padding-left: 2%;
+    
+    }
 
-}
-
-#formulario1 input{
-    margin-top: 1%;
-    width: 85%;
-    max-width: 185px;
-    height: 33px;
+    input{
+        margin-top: 1%;
+        width: 85%;
+        max-width: 185px;
+        height: 33px;
+    }
 }
 
 
@@ -99,14 +97,11 @@ main {
 }
 
 #botonSend{
-    margin-top: 25px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-end;
+    @extend #checkbox;
     gap: 2px;
     font-size: 20px;
 }
+
 #checkbox{
     margin-top: 25px;
     display: flex;
@@ -114,13 +109,13 @@ main {
     align-items: center;
     justify-content: flex-end;
     gap: 5px;
-}
 
-#opciones{
-    width: 300px;
-    display: flex;
-    justify-content: center;
-    gap: 25px;
+    #opciones{
+        width: 300px;
+        display: flex;
+        justify-content: center;
+        gap: 25px;
+    }
 }
 
 /* termina pag contacto */
@@ -134,43 +129,42 @@ main {
     grid-template-columns: 40% 40%;
     gap: 10%;
     grid-template-rows: 1fr 2fr;
+
+    div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 8%;
+        border: 8px outset goldenrod;
+        border-radius: 2%;
+
+        #mapas-suc{
+            padding: 3%;
+            width: 40vw;
+            grid-column: 1 / 2;
+            grid-row: 2 / 3;
+        }
+        
+        #mapas-suc2{
+            @extend #mapas-suc
+            ;grid-column: 2 / 3;    
+        }
+        
+        .texto-ubi{
+            color: whitesmoke;
+        }
+    }
+
+    h2{
+        grid-column: 1 / 3;
+        display: flex;
+        align-self: center;
+        justify-self: center;
+        font-size: 58px;
+        color: goldenrod(214, 214, 214);
+    }
     
 }
-
-#mapas h2{
-    grid-column: 1 / 3;
-    display: flex;
-    align-self: center;
-    justify-self: center;
-    font-size: 58px;
-    color: goldenrod(214, 214, 214);
-}
-
-#mapas-suc{
-    padding: 3%;
-    width: 40vw;
-    grid-column: 1 / 2;
-    grid-row: 2 / 3;
-}
-
-#mapas-suc2{
-    @extend #mapas-suc
-    ;grid-column: 2 / 3;
-    
-}
-
-#mapas div{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 8%;
-    border: 8px outset goldenrod;
-    border-radius: 2%;
-}
-.texto-ubi{
-    color: whitesmoke;
-}
-
 
 
 /* medias para responsive home y contacto */
@@ -179,161 +173,113 @@ main {
 /* para pc */
 
 @media only screen and (min-width: 881px) {
+    #head{
+        width: 100vw;
+        margin: 0%;
+        padding: 0%;
+
+        #head2{
+            display: flex;
+            align-items: flex-end;
+
+            #titulo{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                align-self: center;
+                text-size-adjust: auto;
+                gap: 4%;
+        
+                .h1{
+                    font-size: 48px;
+                    padding-top: 0%;
+                }
+            
+                h2{
+                    @extend .h1;
+                }
+            }
+
+            #carrito{
+                padding: 0%;
+                display:flex;
+                justify-content: center;
+                align-self: center;
+
+                a{
+                    display: flex;
+                    justify-content: flex-end;
+                    width: 80%;
+                }
+                #carrito2{
+                    width: 40%;
+                }
+            }
+        }
+    
+    }
+
+
     #navbar-propio {
         display: none !important;
      }
 
      .nav-desktop{
         display: contents;
+
+        #navFlex li:hover{
+            background-color: rgb(75, 75, 75);
+            
+            .dropdown-menu li a:hover{
+                background-color: rgb(75, 75, 75);
+               
+            }
+
+        }
      }
 
 
-    #logo{
-        width: 100%;
-    }
-
-    #carrito2{
-        width: 40%;
-    }
-
-    #copa-vinos{
-        display: none;
-        
-    }
-
-    #carrusel-box{
-        display: flex;
-        justify-content: center;
-    }
-
-    #carouselExampleSlidesOnly{
-        width: 70vw;
-        border: 2px dashed grey;
-        padding: 1%;
-    }
-    #prodDestacados{
-        display: flex;
-        justify-self:flex-end;
-        margin-top: 5%;
-        display: grid;
-        grid-template-columns: 23% 23% 23% 23%;
-        grid-row: auto;
-        grid-template-rows:auto;
-        gap: 2%;
-
-    }
-
-    #textoDestacados{
-        margin-top: 50%;
-    }
-
-    #nav-flex{
-        border-style: none;
-    }
-
-
-    #navbarNavDropdown ul li{
-       display: flex;
-    }
-
-    li a{
-        display: flex;
-        align-self: center;
-    }
-
-    #navFlex li:hover{
-        background-color: rgb(75, 75, 75);
-
-    }
-
-
-    .dropdown-menu li a:hover{
-        background-color: rgb(75, 75, 75);
+     #copa-vinos{
+         display: none;
        
-    }
+     }
 
-    #head{
-        width: 100vw;
-        margin: 0%;
-        padding: 0%;
-    }
+     #carrusel-box{
+         display: flex;
+         justify-content: center;
 
-    #head2{
-        display: flex;
-        align-items: flex-end;
-    }
+         #carouselExampleSlidesOnly{
+            width: 70vw;
+            border: 2px dashed grey;
+            padding: 1%;
+        }
+     }
 
-    #titulo{
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        align-self: center;
-        text-size-adjust: auto;
-        gap: 4%;
-    }
+     
+     #prodDestacados{
+         display: flex;
+         justify-self:flex-end;
+         margin-top: 5%;
+         display: grid;
+         grid-template-columns: 23% 23% 23% 23%;
+         grid-row: auto;
+         grid-template-rows:auto;
+         gap: 2%;
 
-    #titulo h1{
-        font-size: 48px;
-        padding-top: 0%;
-    }
+     }
 
-    #titulo h2{
-        font-size: 48px;
-    }
+     #textoDestacados{
+         margin-top: 50%;
+     }
 
-    #logo{
-        position: relative;
-
-    }
-
-    #carrito{
-        padding: 0%;
-    }
-
-    #carrito{
-        display:flex;
-        justify-content: center;
-        align-self: center;
-    }
-
-    #carrito a{
-        display: flex;
-        justify-content: center;
-    }
-
-    #mail-dir p{
-
-        font-size: 24px;
-    }
-
-    #consulta{
-        display: flex;
-        align-items: center;
-    }
-
-    #logo-wpp{
-        width: 60%;
-    }
-
-    #consulta p{
-        font-size: 24px;
-    }
-
-    #logo-wpp img{
-        width: 60%;
-        padding-left: 15%;
-    }
 
     #formulario1{
         grid-template-columns: 43% 55%;
+
+        p{
+            padding-right: 5%;
+        }
     }
-
-    #formulario1 p{
-        padding-right: 5%;
-    }
-
-
-
 
 }
 
@@ -342,35 +288,17 @@ main {
 @media only screen and (max-width: 880px){
 
     body{
-        width: 100vw;
-        height: 100vh;
         padding: 0%;
         margin: 0%;
+        width: 100vw;
+        height: 100vh;
+
     }
 
     #carrusel-box{
-        
         display: none;
     }
-
-    .footer h4,h3{
-        color: goldenrod;
-        font-size: small;
-        margin-bottom: 0%;
-    }
-
-    .redes{
-        width: 40%;
-    }
-
-    .logos{
-        width: 100%;
-    }
-
-    .logos-footer{
-        width: 80%;
-    }
-
+    
         /* pag ubicacion */
     
         #mapas{
@@ -386,54 +314,47 @@ main {
                                  "titulo"
                                  "alem"
                                  "mdl";
-            
-    
-        }
-    
-        #mapas h2{
+
+            h2{
             justify-content: center;
             grid-area: titulo;
             width: 100vw;
             font-size: 25px;
                 
-        }
+            }
+
+            #alem{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                height: 50vh;
+                width: 85vw;
+                grid-area: alem;
+
+                #mapas-suc{
+                    padding: 5%;
+                    width: 85vw;
+                    height: 50vh;
+                }
+            }
+
+            #mdl{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                height: 50vh;
+                width: 85vw;
+                grid-area: mdl;
     
-        #alem{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            height: 50vh;
-            width: 85vw;
-            grid-area: alem;
-        }
-        #mapas-suc{
-            padding: 5%;
-            width: 85vw;
-            height: 50vh;
-        }
+                #mapas-suc2{
+                    padding: 5%;
+                    width: 85vw;
+                    height: 50vh;
+                }
     
-        #mdl{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            height: 50vh;
-            width: 85vw;
-            grid-area: mdl;
-
+            }
+                
         }
-
-
-        #mapas-suc2{
-            padding: 5%;
-            width: 85vw;
-            height: 50vh;
-        }
-
-        .texto-ubi{
-            font-size: 13px;
-        }
-
-
 
         /* pagina precios */
 
@@ -443,70 +364,72 @@ main {
             grid-template-rows: 1fr 1fr;
             grid-template-areas: "precios"
                                  "resumen";
-        }
 
-        #resumen{
-            grid-area: resumen;
-            width: 100vw;
-            margin: 0%;
-        }
+            #resumen{
+                grid-area: resumen;
+                width: 100vw;
+                margin: 0%;
 
-        .lista-precios{
-            grid-area: precios;
-            width: 92vw;
-        }
+                .total{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+        
+                    .precio-total{
+                        width: 80%;
+                    }
 
-        .top-caja{
-            padding-left: 5%;
-        }
+                    #pagar{
+                        padding: 0%;
+                        margin: 0%;
+                        width: 30%;
+                    }
+                }
+            }
 
-        .top-caja h4{
-            font-size: 14px;
-        }
+            .lista-precios{
+                grid-area: precios;
+                width: 92vw;
 
-        .left-caja{
-            padding-left: 15%;
-            justify-content: space-evenly;
+                .top-caja{
+                    padding-left: 5%;
+        
+                    h4{
+                        font-size: 14px;
+                    }
+        
+                    .left-caja{
+                        padding-left: 15%;
+                        justify-content: space-evenly;
             
+                        h3{
+                            font-size: 10px;
+                        }
+                        
+                    }
+                }
+        
+                #caja{
+                    
+                    height: 250px;
+        
+                    .art{
+                        justify-content:space-between;
+                        padding-right: 2%;
+                        height: 45px;
+            
+                        p{
+                            font-size: 11px;
+                        }
+            
+                        input{
+                            width: 30px;
+                            font-size: 12px;
+                        }
+                    }
+                }
+            }
         }
 
-        .left-caja h3{
-            font-size: 10px;
-        }
-
-        #caja{
-            height: 250px;
-        }
-
-        .art{
-            justify-content:space-between;
-            padding-right: 2%;
-            height: 45px;
-        }
-
-        .art p{
-            font-size: 11px;
-        }
-        .art input{
-            width: 30px;
-            font-size: 12px;
-        }
-
-
-        #pagar{
-            padding: 0%;
-            margin: 0%;
-            width: 30%;
-        }
-
-        .total{
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .precio-total{
-            width: 80%;
-        }
 }
