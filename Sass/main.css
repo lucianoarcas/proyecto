@@ -13,9 +13,9 @@ body {
 
 #titulo {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+  flex-direction: column;
   padding: 0%;
   width: 60%;
 }
@@ -34,12 +34,11 @@ body {
   top: 0%;
   z-index: 1;
   background-color: black;
-  width: 100vw;
 }
 #head #head2 {
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   width: 100vw;
   -moz-column-gap: 2%;
        column-gap: 2%;
@@ -321,6 +320,7 @@ main {
 #copa-vinos {
   display: flex;
   justify-content: center;
+  align-items: center;
   width: 100%;
 }
 #copa-vinos img {
@@ -374,9 +374,9 @@ main {
 #comentario {
   margin-top: 25px;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+  flex-direction: column;
   gap: 2px;
 }
 
@@ -397,6 +397,7 @@ main {
   width: 300px;
   display: flex;
   justify-content: center;
+  align-items: center;
   gap: 25px;
 }
 
@@ -468,6 +469,7 @@ main {
     padding: 0%;
     display: flex;
     justify-content: center;
+    align-items: center;
     align-self: center;
   }
   #head #head2 #carrito a {
@@ -536,9 +538,9 @@ main {
   /* pag ubicacion */
   #mapas {
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     max-width: 100vw;
     width: 100vw;
     grid-template-columns: 1fr;
@@ -591,9 +593,9 @@ main {
   }
   #main-precios #resumen .total {
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
   }
   #main-precios #resumen .total .precio-total {
     width: 80%;
