@@ -481,14 +481,6 @@ main {
   #head #head2 #carrito #carrito2 {
     width: 40%;
   }
-  .footer {
-    height: 180px;
-  }
-  .footer .logos {
-    height: -webkit-fit-content;
-    height: -moz-fit-content;
-    height: fit-content;
-  }
   #navbar-propio {
     display: none !important;
   }
