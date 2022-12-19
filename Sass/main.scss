@@ -220,6 +220,13 @@ main {
     }
 
 
+    .footer{
+        height: 180px;
+        .logos{
+            height: fit-content;
+        }
+    }
+
     #navbar-propio {
         display: none !important;
      }
@@ -287,6 +294,10 @@ main {
 
 @media only screen and (max-width: 880px){
 
+    #head2{
+        margin: 0%;
+    }
+
     body{
         padding: 0%;
         margin: 0%;
@@ -297,9 +308,10 @@ main {
 
     .dir-mail{
         h3{
-            font-size: 14px;
+            font-size: 12px;
         }
     }
+
 
     #carrusel-box{
         display: none;
@@ -331,8 +343,8 @@ main {
                 display: flex;
                 flex-direction: column;
                 align-items: center;
-                height: 50vh;
-                width: 85vw;
+                height: 45vh;
+                width: 86vw;
                 grid-area: alem;
 
                 #mapas-suc{
@@ -346,8 +358,8 @@ main {
                 display: flex;
                 flex-direction: column;
                 align-items: center;
-                height: 50vh;
-                width: 85vw;
+                height: 45vh;
+                width: 86vw;
                 grid-area: mdl;
     
                 #mapas-suc2{
@@ -436,3 +448,4 @@ main {
         }
 
 }
+

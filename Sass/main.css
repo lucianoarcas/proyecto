@@ -36,6 +36,7 @@ body {
   background-color: black;
 }
 #head #head2 {
+  margin: 0%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -189,15 +190,15 @@ li a {
   justify-content: center;
 }
 .footer .redes {
-  padding-right: 5%;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
   width: 40vw;
 }
 .footer .redes .logos {
+  gap: 3px;
   display: flex;
-  width: 50%;
+  width: 60%;
   justify-content: space-between;
 }
 .footer .redes .logos a {
@@ -480,6 +481,14 @@ main {
   #head #head2 #carrito #carrito2 {
     width: 40%;
   }
+  .footer {
+    height: 180px;
+  }
+  .footer .logos {
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
   #navbar-propio {
     display: none !important;
   }
@@ -526,6 +535,9 @@ main {
 }
 /* para cel */
 @media only screen and (max-width: 880px) {
+  #head2 {
+    margin: 0%;
+  }
   body {
     padding: 0%;
     margin: 0%;
@@ -533,7 +545,7 @@ main {
     height: 100vh;
   }
   .dir-mail h3 {
-    font-size: 14px;
+    font-size: 12px;
   }
   #carrusel-box {
     display: none;
@@ -560,8 +572,8 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 50vh;
-    width: 85vw;
+    height: 45vh;
+    width: 86vw;
     grid-area: alem;
   }
   #mapas #alem #mapas-suc, #mapas #alem div #mapas-suc2, #mapas div #alem #mapas-suc2 {
@@ -573,8 +585,8 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 50vh;
-    width: 85vw;
+    height: 45vh;
+    width: 86vw;
     grid-area: mdl;
   }
   #mapas #mdl #mapas-suc2 {
