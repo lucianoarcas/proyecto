@@ -1,0 +1,48 @@
+[33mcommit 561392a93c2837502949fad04e6e7445a1b20b14[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m)[m
+Merge: 3877e74 8c375d2
+Author: Luciano Arcas <arcasluciano1@gmail.com>
+Date:   Thu Mar 16 06:39:25 2023 -0300
+
+    Merge branch 'master' of https://github.com/lucianoarcas/proyecto
+
+[33mcommit 3877e74d19306455ee5d3f8b141e80185cc3fa9e[m
+Author: Luciano Arcas <arcasluciano1@gmail.com>
+Date:   Thu Mar 16 06:36:09 2023 -0300
+
+    agrego fetch y funcion async
+
+[33mcommit 8c375d247abdfd8114eba26a718ef8285cc3112e[m
+Author: lucianoarcas <arcasluciano1@gmail.com>
+Date:   Sat Mar 4 04:07:20 2023 -0300
+
+    Update README.md
+
+[33mcommit 746e16413fdb4dac97aa6f83f90f55302e3bb6ff[m
+Author: Luciano Arcas <arcasluciano1@gmail.com>
+Date:   Sat Mar 4 04:04:32 2023 -0300
+
+    agrego archivos js a argana.html
+
+[33mcommit 8d2732d464da9deebbdef3067cd7fdeb1dbeaf30[m
+Author: Luciano Arcas <arcasluciano1@gmail.com>
+Date:   Mon Dec 19 05:18:41 2022 -0300
+
+    corrijo footer
+
+[33mcommit f1f91f6f856ad1f2123e8e1dea018ee2b21b6fb4[m
+Author: Luciano Arcas <arcasluciano1@gmail.com>
+Date:   Mon Dec 19 05:16:32 2022 -0300
+
+    link carrito
+
+[33mcommit 964797952015666c39d3a42491e455a1c30d8710[m
+Author: Luciano Arcas <arcasluciano1@gmail.com>
+Date:   Mon Dec 19 05:08:10 2022 -0300
+
+    corrijo footer
+
+[33mcommit 268e1cb746ba22398c41cd5eb9a0ce253bb0364b[m
+Author: Luciano Arcas <arcasluciano1@gmail.com>
+Date:   Sat Dec 3 01:21:01 2022 -0300
+
+    corrijo letra footer
