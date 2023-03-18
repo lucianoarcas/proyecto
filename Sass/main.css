@@ -218,7 +218,6 @@ li a {
 #main-precios {
   display: flex;
   margin-top: 5%;
-  height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
   margin-bottom: 5%;
@@ -255,7 +254,6 @@ li a {
 #main-precios .lista-precios {
   margin-left: 3%;
   width: 75%;
-  height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
 }
@@ -316,6 +314,47 @@ li a {
 
 main {
   color: goldenrod;
+}
+
+.control {
+  display: flex;
+  justify-content: center;
+  height: 50vh;
+}
+
+#controlCarrito {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  justify-self: center;
+  width: 36%;
+}
+#controlCarrito h4 {
+  display: flex;
+  justify-content: center;
+}
+
+.p-total {
+  margin-top: 3%;
+  display: flex;
+  justify-content: center;
+  font-size: 28px;
+}
+
+.controlCarrito1 {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  justify-content: center;
+  width: 60%;
+}
+.controlCarrito1 article {
+  display: flex;
+  justify-content: space-between;
+}
+
+.confirmarPedido {
+  margin-top: 5%;
 }
 
 #copa-vinos {

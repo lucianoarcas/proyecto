@@ -22,23 +22,12 @@ contenedor.addEventListener("change", (e) => {
   subtotal = precio * cantidad
 
 
-  // aqui calculo el subtotal de cada producto
-  let subtotalElement = document.getElementById(`subtotal-${productoId}`)
-    if (!subtotalElement) {
-      subtotalElement = document.createElement("p")
-      subtotalElement.setAttribute("id", `subtotal-${productoId}`)
-      subtotalElement.classList.add("subtotal")
 
-    }
-
-    subtotalElement.innerHTML = `$${subtotal}`;
-
-  
 
 // aqui se filtran los productos agregados al carrito y se suman los subtotales
   carrito = productos.filter(producto => producto.cantidad != undefined && producto.cantidad > 0)
   sumaSubtotal = carrito.reduce((total, producto) => total + producto.precio * producto.cantidad, 0)
-
+  
   // el elemento con ID total es un <p> que muestra el total del pedido
   const total = document.getElementById("total")
   total.innerHTML = `$${sumaSubtotal}`;
@@ -48,11 +37,14 @@ contenedor.addEventListener("change", (e) => {
   carritoEnJson = JSON.stringify(carrito);
   localStorage.setItem("carrito", carritoEnJson);
   localStorage.setItem("total", sumaSubtotal);
-  
+
+  console.log(carrito)
+
+
+
 
 })
 
-// inicializa el total del pedido en $0
 document.addEventListener('DOMContentLoaded', () => {
 
   total.innerHTML = ` $${sumaSubtotal}`;
@@ -61,7 +53,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
-// funcion async con fetch para pintar productos desde archivo json.
+
+ // funcion async con fetch para pintar productos desde archivo json.
 
 async function storage(){
   const response =  await fetch("../js/data.json")

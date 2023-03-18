@@ -12,10 +12,13 @@ body{
 }
 
 
+
+
 @import "header";
 @import "nav";
 @import "footer";
 @import "precios";
+
 
 @mixin flex-center {
     display: flex;
@@ -26,9 +29,55 @@ body{
 
 
 main {
+    
     color: goldenrod;
+
+
 }
 
+.control{
+    display: flex;
+    justify-content: center;
+    height: 50vh;
+}
+
+#controlCarrito{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    justify-self: center;
+    width: 36%;
+    h4{
+        display: flex;
+        justify-content : center;
+        
+    }
+
+}
+
+.p-total{
+    margin-top: 3%;
+    display: flex;
+    justify-content: center;
+    font-size: 28px;
+}
+
+.controlCarrito1{
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    justify-content: center;
+    width: 60%;
+    article{
+        display: flex;
+        justify-content: space-between;
+        
+    }
+}
+
+.confirmarPedido {
+    margin-top: 5%;
+}
 
 #copa-vinos{
     @include flex-center;
