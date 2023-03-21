@@ -22,8 +22,6 @@ contenedor.addEventListener("change", (e) => {
   subtotal = precio * cantidad
 
 
-
-
 // aqui se filtran los productos agregados al carrito y se suman los subtotales
   carrito = productos.filter(producto => producto.cantidad != undefined && producto.cantidad > 0)
   sumaSubtotal = carrito.reduce((total, producto) => total + producto.precio * producto.cantidad, 0)
@@ -40,9 +38,6 @@ contenedor.addEventListener("change", (e) => {
 
   console.log(carrito)
 
-
-
-
 })
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -50,9 +45,6 @@ document.addEventListener('DOMContentLoaded', () => {
   total.innerHTML = ` $${sumaSubtotal}`;
 
 });
-
-
-
 
  // funcion async con fetch para pintar productos desde archivo json.
 
