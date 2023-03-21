@@ -16,15 +16,20 @@ async function pintarCarro (){
     
         const article = document.createElement("article")
         
-        article.innerHTML += `<p> ${producto.cantidad}</p>
+        article.innerHTML += `<p class="cantidad"> ${producto.cantidad}</p>
                               <p> ${producto.nombre}</p>
-                              <p> ${producto.formato}</p>`
+                              <p> ${producto.formato}</p>
+                              <div class="botones">
+                              <div class="botonesSuma">
+                              <button class="botonSuma" type="button"> + </button>
+                              </div>
+                              <div class="botonesResta">
+                              <button class="botonResta" type="button"> - </button>
+                              </div>
+                              </div>`
 
         controlCarrito1.appendChild(article)
-        
     });
-
-
 }
 
 pintarCarro()
@@ -41,8 +46,12 @@ const pintarTotal = () => {
 
 
     control.appendChild(pedidoTotal)
-    console.log(pedidoTotal)
+   
 
 }
 
 pintarTotal()
+
+
+
+

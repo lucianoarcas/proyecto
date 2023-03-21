@@ -353,6 +353,20 @@ main {
   justify-content: space-between;
 }
 
+.botones {
+  display: flex;
+}
+
+.botonSuma {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.botonResta {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
 .confirmarPedido {
   margin-top: 5%;
 }
